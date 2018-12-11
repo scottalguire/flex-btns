@@ -71,7 +71,7 @@ body{
   -ms-transform: translateY(-50%);
 }
 
-.box {
+.btn-group {
   /* modern */
   flex-wrap: wrap;
   align-items: center;
@@ -81,7 +81,7 @@ body{
   margin: 0 auto;
 }
 
-.box .btn-container {
+.btn-group .btn-container {
   /* legacy fallbacks*/
   width: 100%;
   display:inline-block;
@@ -94,7 +94,7 @@ body{
   text-align: center;
   border-radius: 3px;
 }
-.box .btn-container .btn {
+.btn-group .btn-container .btn {
   /* legacy fallbacks*/
   display: inline-block;
   /* modern */
@@ -109,7 +109,7 @@ body{
   overflow: hidden;
 }
 
-.box .btn-container .btn > div {
+.btn-group .btn-container .btn > div {
   position: relative;
   top:50%;
   transform: translateY(-50%);
@@ -121,7 +121,7 @@ body{
 }
 
 @media (min-width: 768px) {
-  .box .btn-container {
+  .btn-group .btn-container {
     /* legacy fallbacks*/
     width: 49.1399%;
     width: calc(50% - 0.8711%);
@@ -133,7 +133,7 @@ body{
 }
 
 @media (min-width: 1030px) {
-  .box .btn-container {
+  .btn-group .btn-container {
     /* legacy fallbacks*/
     width: 24.1399%;
     width: calc(25% - 0.8711%);
@@ -152,13 +152,13 @@ body{
 
 @supports (display: flex){
   /* setting display:flex here for safari 8 support */
-  .box,
-  .box .btn-container,
-  .box .btn-container .btn{
+  .btn-group,
+  .btn-group .btn-container,
+  .btn-group .btn-container .btn{
     display: flex;
   }
 
-  .box .btn-container .btn > div,
+  .btn-group .btn-container .btn > div,
   .btn.btn-flex > div {
     position: relative;
     top:auto;
