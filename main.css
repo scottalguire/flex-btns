@@ -59,7 +59,6 @@ body{
 }
 
 .btn.btn-flex{
-  display:flex;
   margin-bottom:10px;
 }
 
@@ -152,6 +151,7 @@ body{
 
 @supports (display: flex){
   /* setting display:flex here for safari 8 support */
+  .btn.btn-flex,
   .btn-group,
   .btn-group .btn-container,
   .btn-group .btn-container .btn{
